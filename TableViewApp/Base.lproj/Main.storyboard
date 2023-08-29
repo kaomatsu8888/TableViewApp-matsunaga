@@ -137,9 +137,9 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dnK-lZ-yho">
-                        <barButtonItem key="rightBarButtonItem" title="add" id="D80-nV-L3Q">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="ToK-un-7CV">
                             <connections>
-                                <segue destination="sDg-ne-lWB" kind="show" id="HQs-n7-EEK"/>
+                                <segue destination="sDg-ne-lWB" kind="show" id="oYa-jV-ctA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -170,9 +170,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNj-Sg-6yD">
-                                <rect key="frame" x="159" y="237" width="75" height="34.333333333333314"/>
+                                <rect key="frame" x="170" y="237" width="53" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="add"/>
+                                <connections>
+                                    <action selector="addTask:" destination="sDg-ne-lWB" eventType="touchUpInside" id="RU9-7R-Azn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="caJ-14-iYJ"/>
@@ -188,6 +191,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="LxF-sN-4oR"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addTextField" destination="467-ip-dGH" id="euG-xE-bLr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPv-cQ-WvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
